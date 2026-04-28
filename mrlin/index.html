@@ -32,9 +32,17 @@ h1 {
     line-height: 1.4;
 }
 
+p {
+    font-size: 17px;
+    margin: 18px 0;
+}
+
 h2 {
-    font-size: 20px;
-    margin-top: 40px;
+    font-size: 22px;
+    line-height: 1.45;
+    border-left: 4px solid #b3261e;
+    padding-left: 12px;
+    margin-top: 46px;
 }
 
 .img-box {
@@ -76,16 +84,60 @@ h2 {
     display: block;
 }
 
+.breadcrumb {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 18px;
+}
 
+.breadcrumb a {
+    color: #777;
+    text-decoration: none;
+}
+
+.breadcrumb span {
+    margin: 0 4px;
+}
+
+.site-header {
+    border-bottom: 1px solid #eee;
+    padding: 14px 20px;
+    background: #fff;
+}
+
+.site-name {
+    max-width: 720px;
+    margin: auto;
+    font-size: 22px;
+    font-weight: bold;
+    color: #222;
+}
+
+.site-sub {
+    max-width: 720px;
+    margin: 2px auto 0;
+    font-size: 13px;
+    color: #888;
+}
 
 </style>
 </head>
 
 <body>
-
+<header class="site-header">
+  <div class="site-name">健康新知</div>
+  <div class="site-sub">銀髮保健・生活養生・日常照護</div>
+</header>
+    
 <div class="container">
 
-<div class="meta">健康新知›銀髮保健›泌尿道健康</div>
+<nav class="breadcrumb">
+  <a href="#">健康新知</a>
+  <span>›</span>
+  <a href="#">銀髮保健</a>
+  <span>›</span>
+  <span>泌尿道健康</span>
+</nav>
 
 <h1>
 半夜爬起來4次、滴滴答答尿不乾淨、不敢出遠門⋯⋯<br>
