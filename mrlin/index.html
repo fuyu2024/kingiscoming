@@ -122,6 +122,57 @@ p:first-of-type {
     font-size: 14px;
     color: #888;
 }
+.note-list {
+    background: #faf7f3;
+    border: 1px solid #eee0d6;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 26px 0;
+}
+
+.note-item {
+    border-bottom: 1px solid #eadbd0;
+    padding: 14px 0;
+}
+
+.note-item:last-child {
+    border-bottom: none;
+}
+
+.note-item strong {
+    display: block;
+    font-size: 20px;
+    color: #8f1f18;
+    margin-bottom: 4px;
+}
+
+.note-item p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0;
+}
+.check-list {
+    background: #fff8f0;
+    border-left: 4px solid #b3261e;
+    padding: 18px 20px;
+    margin: 26px 0;
+    border-radius: 8px;
+}
+
+.check-list div {
+    font-size: 19px;
+    line-height: 1.8;
+    padding: 10px 0 10px 28px;
+    position: relative;
+}
+
+.check-list div::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #b3261e;
+    font-weight: bold;
+}
 
 </style>
 </head>
@@ -213,15 +264,32 @@ p:first-of-type {
 
 <p>於是他再深入去查了這些營養元素是什麼：</p>
 
-<p>· 鱉：自古以來，人們養身補體的頂級滋補食材，可以溫和地滋補強身，調節生理機能。</p>
+<div class="note-list">
+  <div class="note-item">
+    <strong>鱉</strong>
+    <p>自古以來，人們養身補體的頂級滋補食材，可以溫和地滋補強身，調節生理機能。</p>
+  </div>
 
-<p>· 精胺酸：甲魚本身含有高量的精胺酸，可以促進一氧化氮生成，是身體循環、能量與保護力的基礎，有助維持體力與整體機能。</p>
+  <div class="note-item">
+    <strong>精胺酸</strong>
+    <p>甲魚本身含有高量的精胺酸，可以促進一氧化氮生成，是身體循環、能量與保護力的基礎，有助維持體力與整體機能。</p>
+  </div>
 
-<p>· 黑瑪卡：最頂級的瑪卡種類，被大量健身族、運動員和男性用來作為日常能量與體力的重要補給。</p>
+  <div class="note-item">
+    <strong>黑瑪卡</strong>
+    <p>最頂級的瑪卡種類，被大量健身族、運動員和男性用來作為日常能量與體力的重要補給。</p>
+  </div>
 
-<p>· 鋅：人體中含量第2多的必需微量礦物質，和能量代謝、免疫運作，以及日常生理機能、生殖機能都有關聯，也是現代男性保健一定會被提到的基礎營養元素。</p>
+  <div class="note-item">
+    <strong>鋅</strong>
+    <p>人體中含量第2多的必需微量礦物質，和能量代謝、免疫運作，以及日常生理機能、生殖機能都有關聯，也是現代男性保健一定會被提到的基礎營養元素。</p>
+  </div>
 
-<p>· Omega-3：含DHA、EPA，幫助維持循環順暢，調節生理機能。</p>
+  <div class="note-item">
+    <strong>Omega-3</strong>
+    <p>含DHA、EPA，幫助維持循環順暢，調節生理機能。</p>
+  </div>
+</div>
 
 <p>「鱉可補癆傷，壯陽氣，大補陰之不足」── 中醫古籍記載</p>
 
@@ -263,9 +331,11 @@ p:first-of-type {
 
 <p>如果你或身邊的親友有以下狀況，可能就要多加留意：</p>
 
-<p>· 夜晚睡覺中途需要起床排尿超過兩次以上</p>
-<p>· 每次排尿感覺尿流變細、無力，需要用力憋氣才能排出，或擠出一點又沒了</p>
-<p>· 排尿結束後滴滴答答收不了尾，或覺得沒有尿乾淨</p>
+<div class="check-list">
+  <div>夜晚睡覺中途需要起床排尿超過兩次以上</div>
+  <div>每次排尿感覺尿流變細、無力，需要用力憋氣才能排出，或擠出一點又沒了</div>
+  <div>排尿結束後滴滴答答收不了尾，或覺得沒有尿乾淨</div>
+</div>
 
 <p>這些都不是理所當然的老化，也不是只能忍受的宿命。</p>
 
@@ -274,8 +344,6 @@ p:first-of-type {
 <p>林先生現在還是每天早起。不是因為睡不著，而是習慣了。他喜歡在太陽剛爬上屋頂那個時刻，泡一壺茶，坐在窗邊，安安靜靜地迎接新的一天。</p>
 
 <p>他說，以前那段日子，最讓他難受的不是身體的不舒服，而是那種無力感，覺得自己的身體不受自己控制，生活的半徑一天天縮小，不得已只能放棄很多事情。</p>
-
-<p>「現在比較好了。我不是說跟年輕時完全一樣，但我知道怎麼照顧自己了，也知道有哪些方法可以幫助自己。」他說。</p>
 
 <p>「身體缺的東西就是需要慢慢補回來。你不能期待吃一個禮拜就怎樣，但你有耐心，持續下去，慢慢就會感覺到。」</p>
 
