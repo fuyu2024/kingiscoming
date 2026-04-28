@@ -5,131 +5,146 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>健康新知›銀髮保健›泌尿道健康</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Noto Sans TC', sans-serif; background-color: #ffffff; color: #1a1a1a; line-height: 1.8; }
-        .container-media { max-width: 720px; margin: 0 auto; padding: 0 15px; }
-        .breadcrumb { padding: 15px 0; color: #666; font-size: 0.9rem; border-bottom: 1px solid #eee; margin-bottom: 30px; }
-        h1 { font-family: 'Noto Serif TC', serif; font-size: 2.2rem; font-weight: 700; line-height: 1.4; margin-bottom: 20px; }
-        .subtitle { font-size: 1.3rem; color: #444; margin-bottom: 30px; font-weight: 300; }
-        .editor { font-size: 0.9rem; color: #888; margin-bottom: 40px; }
-        .content-p { margin-bottom: 25px; font-size: 1.15rem; text-align: justify; }
-        .content-h2 { font-family: 'Noto Serif TC', serif; font-size: 1.6rem; font-weight: 700; color: #000; margin: 50px 0 25px 0; border-left: 5px solid #2563eb; padding-left: 15px; }
-        .placeholder-box { background: #fcfcfc; border: 1px solid #efefef; padding: 50px 20px; text-align: center; color: #999; font-style: italic; margin: 30px 0; }
-        .ancient-quote { font-size: 1.4rem; font-family: 'Noto Serif TC', serif; text-align: center; margin: 50px 0; padding: 20px; background: #f9f9f9; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
-        .cta-area { margin-top: 60px; padding: 30px; border: 1px solid #eee; background: #fff; text-align: center; }
-        .btn { display: block; width: 100%; padding: 18px; border-radius: 4px; font-weight: 700; text-decoration: none; margin-bottom: 15px; font-size: 1.2rem; }
+        body { font-family: 'Noto Sans TC', sans-serif; background-color: #f7f7f7; color: #1a1a1a; line-height: 2; }
+        .article-wrapper { max-width: 800px; margin: 0 auto; background-color: #fff; box-shadow: 0 0 40px rgba(0,0,0,0.05); }
+        
+        /* 強化麵包屑存在感 */
+        .breadcrumb-nav { background-color: #f0f4f8; padding: 12px 25px; color: #475569; font-size: 0.95rem; font-weight: 500; border-left: 4px solid #1e40af; }
+        
+        /* 強化 H1 文章標題 */
+        .main-title-area { padding: 50px 40px 30px 40px; border-bottom: 1px solid #eee; }
+        h1 { font-family: 'Noto Serif TC', serif; font-size: 2.8rem; font-weight: 900; line-height: 1.3; color: #000; margin-bottom: 25px; letter-spacing: -0.01em; }
+        .main-subtitle { font-size: 1.4rem; color: #555; line-height: 1.6; font-weight: 300; }
+        
+        /* 修正 H2 視覺層級，使其低於 H1 */
+        h2 { font-family: 'Noto Serif TC', serif; font-size: 1.8rem; font-weight: 700; color: #1e40af; margin: 60px 0 30px 0; line-height: 1.4; position: relative; padding-bottom: 10px; }
+        h2::after { content: ''; position: absolute; left: 0; bottom: 0; width: 50px; height: 3px; background-color: #1e40af; }
+
+        .article-body { padding: 40px; }
+        .content-p { margin-bottom: 35px; font-size: 1.2rem; text-align: justify; color: #334155; }
+        .editor-tag { font-size: 0.9rem; color: #94a3b8; margin-top: 15px; display: block; }
+        .quote-highlight { font-size: 1.6rem; font-family: 'Noto Serif TC', serif; color: #0f172a; font-weight: 700; margin: 40px 0; padding: 20px; border-left: 6px solid #e2e8f0; background: #f8fafc; }
+        .ancient-text { font-family: 'Noto Serif TC', serif; font-size: 1.4rem; text-align: center; color: #1e40af; background: #eff6ff; padding: 30px; margin: 50px 0; border-radius: 8px; }
+        
+        .img-placeholder { background: #f1f5f9; border: 1px dashed #cbd5e1; color: #64748b; padding: 60px 20px; text-align: center; font-style: italic; margin: 40px 0; border-radius: 4px; }
+        .cta-container { margin-top: 80px; padding: 40px; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; }
+        .btn-action { display: block; width: 100%; text-align: center; padding: 20px; border-radius: 8px; font-size: 1.3rem; font-weight: 700; text-decoration: none; margin-bottom: 15px; transition: all 0.2s; }
         .btn-line { background: #06C755; color: #fff; }
-        .btn-tel { background: #1e40af; color: #fff; }
+        .btn-phone { background: #1e40af; color: #fff; }
     </style>
 </head>
 <body>
 
-<div class="container-media">
-    <div class="breadcrumb">健康新知›銀髮保健›泌尿道健康</div>
+<div class="article-wrapper">
+    <nav class="breadcrumb-nav">
+        健康新知 › 銀髮保健 › 泌尿道健康
+    </nav>
 
-    <h1>半夜爬起來4次、滴滴答答尿不乾淨、不敢出遠門 ⋯⋯ 他62歲才明白，這不是「老了正常」，而是身體在求救</h1>
-    <p class="subtitle">一個退休老師的真實告白，以及他如何在三個月內找回消失已久的好眠與尊嚴</p>
-    <div class="editor">健康特輯編輯室</div>
+    <header class="main-title-area">
+        <h1>半夜爬起來4次、滴滴答答尿不乾淨、不敢出遠門 ⋯⋯ 他62歲才明白，這不是「老了正常」，而是身體在求救</h1>
+        <p class="main-subtitle">一個退休老師的真實告白，以及他如何在三個月內找回消失已久的好眠與尊嚴</p>
+        <span class="editor-tag">健康特輯編輯室</span>
+    </header>
 
-    <p class="content-p font-bold text-2xl">我已經不記得上一次睡超過三個小時是什麼感覺了。</p>
+    <main class="article-body">
+        <div class="quote-highlight">「我已經不記得上一次睡超過三個小時是什麼感覺了。」</div>
 
-    <div class="placeholder-box">影片(待確認放什麼影片)</div>
+        <div class="img-placeholder">影片(待確認放什麼影片)</div>
 
-    <p class="content-p">這句話，是林先生在診所候診室裡，對著旁邊素昧平生的人說出口的。說完，他自己都愣了一下。一個62歲的退休國小老師，一輩子在台上教學、講課，卻在一個再平常不過的午後，把最難以啟齒的事，輕描淡寫地說給了陌生人聽。</p>
+        <p class="content-p">這句話，是林先生在診所候診室裡，對著旁邊素昧平生的人說出口的。說完，他自己都愣了一下。一個62歲的退休國小老師，一輩子在台上教學、講課，卻在一個再平常不過的午後，把最難以啟齒的事，輕描淡寫地說給了陌生人聽。</p>
 
-    <div class="placeholder-box">圖：62歲男子在床上翻來覆去睡不著的樣子</div>
+        <div class="img-placeholder">圖：62歲男子在床上翻來覆去睡不著的樣子</div>
 
-    <h2 class="content-h2">「年紀大了嘛，正常的。」這句話，害了很多男人忍了太久</h2>
-    <p class="content-p">退休後的第一年，林先生過得很愜意，有空就去公園打打太極，下午泡杯茶看看新聞。兒子在台中工作，假日偶爾回來，孫子剛學會走路，每次來家裡都是一陣歡笑。</p>
-    <p class="content-p">問題，是從什麼時候開始的？</p>
-    <p class="content-p">大概是58歲那年冬天，他注意到自己半夜起來小便的次數變多了，一開始是兩次，他沒在意。「年紀大了嘛，正常的。」老一輩的人這樣說，他也這樣告訴自己。</p>
-    <p class="content-p">但慢慢地，兩次變成三次，三次變成四次。</p>
+        <h2>「年紀大了嘛，正常的。」這句話，害了很多男人忍了太久</h2>
+        <p class="content-p">退休後的第一年，林先生過得很愜意，有空就去公園打打太極，下午泡杯茶看看新聞。兒子在台中工作，假日偶爾回來，孫子剛學會走路，每次來家裡都是一陣歡笑。</p>
+        <p class="content-p">問題，是從什麼時候開始的？</p>
+        <p class="content-p">大概是58歲那年冬天，他注意到自己半夜起來小便的次數變多了，一開始是兩次，他沒在意。「年紀大了嘛，正常的。」老一輩的人這樣說，他也這樣告訴自己。</p>
+        <p class="content-p">但慢慢地，兩次變成三次，三次變成四次。</p>
 
-    <div class="placeholder-box">圖：62歲男子站在小便斗前的背影</div>
-    <p class="content-p">最糟糕的時候，他一個晚上要起來五次。每次摸黑走進廁所，站在馬桶前等了好久，卻只流出稀稀落落、細若游絲的一線，滴滴答答，沒完沒了。結束後，還有一種說不清楚的殘尿感，好像膀胱沒有真正排空，尿道口悶悶的，不太舒服。</p>
-    <p class="content-p">躺回床上，有時候剛要睡著，尿意又來了，他只好再爬起來，站在馬桶前等，再滴出幾滴。</p>
-    <p class="content-p">也因為整晚沒睡好，他白天昏昏沉沉，午餐後常常坐在椅子上就睡著了，但那種睡眠很淺，有一點聲音就會醒，根本不算真正的休息。整個人說不上是哪裡不舒服，但就是提不起勁，體力也一天比一天差。</p>
+        <div class="img-placeholder">圖：62歲男子站在小便斗前的背影</div>
+        <p class="content-p">最糟糕的時候，他一個晚上要起來五次。每次摸黑走進廁所，站在馬桶前等了好久，卻只流出稀稀落落、細若游絲的一線，滴滴答答，沒完沒了。結束後，還有一種說不清楚的殘尿感，好像膀胱沒有真正排空，尿道口悶悶的，不太舒服。</p>
+        <p class="content-p">躺回床上，有時候剛要睡著，尿意又來了，他只好再爬起來，站在馬桶前等，再滴出幾滴。</p>
+        <p class="content-p">也因為整晚沒睡好，他白天昏昏沉沉，午餐後常常坐在椅子上就睡著了，但那種睡眠很淺，有一點聲音就會醒，根本不算真正的休息。整個人說不上是哪裡不舒服，但就是提不起勁，體力也一天比一天差。</p>
 
-    <h2 class="content-h2">花蓮之旅他沒去、麻將局他中途落跑 ⋯⋯ 那些因為尿解不乾淨而悄悄放棄的事</h2>
-    <p class="content-p">比起身體的疲累，更讓林先生難受的，是那些「不敢說出口的小事」。</p>
-    <p class="content-p">兒子有一次提議，全家去花蓮玩三天兩夜，順便爬爬太魯閣。林先生表面上笑著說「好啊好啊」，私下卻在心裡盤算：</p>
-    <p class="content-p">火車要搭四個小時，萬一途中尿急、偏偏又站在廁所裡尿不出來怎麼辦？滴滴答答搞半天，門外還有人排隊 ⋯⋯ 飯店的廁所夠不夠近？風景區的步道走到一半，如果突然尿意湧上來怎麼辦？</p>
-    <p class="content-p">他沒去。他跟兒子說腳有點不舒服，下次再說。兒子信了，他心裡說不清楚是鬆了一口氣，還是更沉重的失落。</p>
+        <h2>花蓮之旅他沒去、麻將局他中途落跑 ⋯⋯ 那些因為尿解不乾淨而悄悄放棄的事</h2>
+        <p class="content-p">比起身體的疲累，更讓林先生難受的，是那些「不敢說出口的小事」。</p>
+        <p class="content-p">兒子有一次提議，全家去花蓮玩三天兩夜，順便爬爬太魯閣。林先生表面上笑著說「好啊好啊」，私下卻在心裡盤算：</p>
+        <p class="content-p">火車要搭四個小時，萬一途中尿急、偏偏又站在廁所裡尿不出來怎麼辦？滴滴答答搞半天，門外還有人排隊 ⋯⋯ 飯店的廁所夠不夠近？風景區的步道走到一半，如果突然尿意湧上來怎麼辦？</p>
+        <p class="content-p">他沒去。他跟兒子說腳有點不舒服，下次再說。兒子信了，他心裡說不清楚是鬆了一口氣，還是更沉重的失落。</p>
 
-    <div class="placeholder-box">圖：62歲男子坐在家裡椅子上失落的樣子</div>
-    <p class="content-p">後來有一次，幾個老朋友揪他去打麻將，他坐下來沒多久，就感覺尿意湧上來。他撐著，想說打完這局再去，但那個殘尿感讓他坐立難安，根本無法專心看牌。最後他忍不住到廁所站了半天，全身用力，還是只擠出幾滴稀薄的尿，尿道口悶脹的感覺絲毫沒有緩解。</p>
-    <p class="content-p">他開始減少喝水量，睡前兩小時滴水不沾，出門前即便沒有尿意，也要站在馬桶前用力擠一擠，盡量把殘尿逼出來，心裡才踏實一點。</p>
-    <p class="content-p">直到有一天，孫子在客廳跑來跑去，他想站起來追，卻發現自己的腿沉得像是綁了鉛塊，整個人提不起力氣，只能坐在沙發上看著孫子跑遠。那個瞬間，他決定去看醫生。</p>
+        <div class="img-placeholder">圖：62歲男子坐在家裡椅子上失落的樣子</div>
+        <p class="content-p">後來有一次，幾個老朋友揪他去打麻將，他坐下來沒多久，就感覺尿意湧上來。他撐著，想說打完這局再去，但那個殘尿感讓他坐立難安，根本無法專心看牌。最後他忍不住到廁所站了半天，全身用力，還是只擠出幾滴稀薄的尿，尿道口悶脹的感覺絲毫沒有緩解。</p>
+        <p class="content-p">他開始減少喝水量，睡前兩小時滴水不沾，出門前即便沒有尿意，也要站在馬桶前用力擠一擠，盡量把殘尿逼出來，心裡才踏實一點。</p>
+        <p class="content-p">直到有一天，孫子在客廳跑來跑去，他想站起來追，卻發現自己的腿沉得像是綁了鉛塊，整個人提不起力氣，只能坐在沙發上看著孫子跑遠。那個瞬間，他決定去看醫生。</p>
 
-    <div class="placeholder-box font-bold text-black">圖：CTA(填寫表單)</div>
+        <div class="img-placeholder font-bold text-black border-2 border-blue-200">圖：CTA(填寫表單)</div>
 
-    <h2 class="content-h2">一個在台上講了30年課的人，卻說不出「我尿尿有問題」這幾個字</h2>
-    <p class="content-p">去診所之前，林先生在門口站了大概五分鐘。他才62歲，他不想承認。</p>
-    <p class="content-p">他是一個在台上講了30年課的人，他習慣的是被人看著、被人聽著，但在這件事上，他卻不知道怎麼開口。</p>
-    <p class="content-p">最後他還是鼓起勇氣進去了。醫生是個50多歲的男性，說話很和緩，他問了夜裡起來幾次、尿流強不強、有沒有等很久才尿得出來、結束後有沒有滴滴答答或覺得沒尿乾淨的感覺。</p>
-    <p class="content-p">林先生一一回答，說著說著，才驚覺這些事情原來可以這樣清楚地描述出來。它們不是「說不清楚的難受」，而是有名字、有成因的身體訊號。</p>
-    <p class="content-p">醫生說，這是中老年男性非常普遍的狀況，跟攝護腺有關係。隨著年紀增長，攝護腺會自然出現變化，逐漸壓迫尿道，導致尿流變細、排尿費力、滴漏不盡。這不是什麼丟臉的事，也不是做錯了什麼才會這樣。</p>
-    <p class="content-p">林先生聽完，沉默了一下，問：「那我怎麼辦？」</p>
+        <h2>一個在台上講了30年課的人，卻說不出「我尿尿有問題」這幾個字</h2>
+        <p class="content-p">去診所之前，林先生在門口站了大概五分鐘。他才62歲，他不想承認。</p>
+        <p class="content-p">他是一個在台上講了30年課的人，他習慣的是被人看著、被人聽著，但在這件事上，他卻不知道怎麼開口。</p>
+        <p class="content-p">最後他還是鼓起勇氣進去了。醫生是個50多歲的男性，說話很和緩，他問了夜裡起來幾次、尿流強不強、有沒有等很久才尿得出來、結束後有沒有滴滴答答或覺得沒尿乾淨的感覺。</p>
+        <p class="content-p">林先生一一回答，說著說著，才驚覺這些事情原來可以這樣清楚地描述出來。它們不是「說不清楚的難受」，而是有名字、有成因的身體訊號。</p>
+        <p class="content-p">醫生說，這是中老年男性非常普遍的狀況，跟攝護腺有關係。隨著年紀增長，攝護腺會自然出現變化，逐漸壓迫尿道，導致尿流變細、排尿費力、滴漏不盡。這不是什麼丟臉的事，也不是做錯了什麼才會這樣。</p>
+        <p class="content-p">林先生聽完，沉默了一下，問：「那我怎麼辦？」</p>
 
-    <h2 class="content-h2">老祖宗用了幾千年的「補腎聖品」，現代科技把它裝進一顆膠囊</h2>
-    <p class="content-p">醫生除了開了藥，也建議林先生搭配天然的保健食品做輔助保養。朋友後來跟他分享了「鱉精」這個東西。</p>
-    <p class="content-p">林先生第一次聽到，其實沒什麼特別感覺。他這一代的人，對鱉並不陌生，小時候鄉下地方，老人家生病或術後調養，有條件的人家都會燉鱉湯補身體，說是「大補」。只是現在住在城市，要買一整隻鱉回來燉，又麻煩又貴。後來他查了一些資料，才知道現在有濃縮萃取過的鱉精，把整隻鱉的精華，像是：鱉鞭、鱉佛、鱉裙……等都納入其中，甚至還額外加了蠔精、瑪卡這類對男人很補的成分，以現代生物科技提煉，做成膠囊的形式，解決掉腥味的問題。</p>
+        <h2>老祖宗用了幾千年的「補腎聖品」，現代科技把它裝進一顆膠囊</h2>
+        <p class="content-p">醫生除了開了藥，也建議林先生搭配天然的保健食品做輔助保養。朋友後來跟他分享了「鱉精」這個東西。</p>
+        <p class="content-p">林先生第一次聽到，其實沒什麼特別感覺。他這一代的人，對鱉並不陌生，小時候鄉下地方，老人家生病或術後調養，有條件的人家都會燉鱉湯補身體，說是「大補」。只是現在住在城市，要買一整隻鱉回來燉，又麻煩又貴。後來他查了一些資料，才知道現在有濃縮萃取過的鱉精，把整隻鱉的精華，像是：鱉鞭、鱉佛、鱉裙……等都納入其中，甚至還額外加了蠔精、瑪卡這類對男人很補的成分，以現代生物科技提煉，做成膠囊的形式，解決掉腥味的問題。</p>
 
-    <div class="placeholder-box">圖：鱉</div>
-    <p class="content-p">於是他再深入去查了這些營養元素是什麼：</p>
-    <p class="content-p"><strong>鱉：</strong>自古以來，人們養身補體的頂級滋補食材，可以溫和地滋補強身，調節生理機能。</p>
-    <p class="content-p"><strong>精胺酸：</strong>甲魚本身含有高量的精胺酸，可以促進一氧化氮生成，是身體循環、能量與保護力的基礎，有助維持體力與整體機能。</p>
-    <p class="content-p"><strong>黑瑪卡：</strong>最頂級的瑪卡種類，被大量健身族、運動員和男性用來作為日常能量與體力的重要補給。</p>
-    <p class="content-p"><strong>鋅：</strong>人體中含量第2多的必需微量礦物質，和能量代謝、免疫運作，以及日常生理機能、生殖機能都有關聯，也是現代男性保健一定會被提到的基礎營養元素。</p>
-    <p class="content-p"><strong>Omega-3：</strong>含DHA、EPA，幫助維持循環順暢，調節生理機能。</p>
+        <div class="img-placeholder">圖：鱉</div>
+        <p class="content-p">於是他再深入去查了這些營養元素是什麼：</p>
+        <p class="content-p"><strong>鱉：</strong>自古以來，人們養身補體的頂級滋補食材，可以溫和地滋補強身，調節生理機能。</p>
+        <p class="content-p"><strong>精胺酸：</strong>甲魚本身含有高量的精胺酸，可以促進一氧化氮生成，是身體循環、能量與保護力的基礎，有助維持體力與整體機能。</p>
+        <p class="content-p"><strong>黑瑪卡：</strong>最頂級的瑪卡種類，被大量健身族、運動員 and 男性用來作為日常能量與體力的重要補給。</p>
+        <p class="content-p"><strong>鋅：</strong>人體中含量第2多的必需微量礦物質，和能量代謝、免疫運作，以及日常生理機能、生殖機能都有關聯，也是現代男性保健一定會被提到的基礎營養元素。</p>
+        <p class="content-p"><strong>Omega-3：</strong>含DHA、EPA，幫助維持循環順暢，調節生理機能。</p>
 
-    <div class="ancient-quote">「鱉可補癆傷，壯陽氣，大補陰之不足」── 中醫古籍記載</div>
-    <p class="content-p">中醫理論中，腎主二便，也就是腎的氣化功能與排尿的順暢有著密切關聯。隨著年齡增長，腎中精氣逐漸虧損，就可能出現尿頻、夜尿、滴不完等困擾。</p>
-    <p class="content-p">林先生決定試試看。</p>
+        <div class="ancient-text">「鱉可補癆傷，壯陽氣，大補陰之不足」── 中醫古籍記載</div>
+        <p class="content-p">中醫理論中，腎主二便，也就是腎的氣化功能與排尿的順暢有著密切關聯。隨著年齡增長，腎中精氣逐漸虧損，就可能出現尿頻、夜尿、滴不完等困擾。</p>
+        <p class="content-p">林先生決定試試看。</p>
 
-    <h2 class="content-h2">第三週的那個早晨，他看著手機上的「06:30」，愣了整整一分鐘</h2>
-    <p class="content-p">前兩週，林先生老實說沒有感覺到什麼明顯差異，他提醒自己要有耐心：「這不是藥，是保養，調養身體需要時間。」</p>
-    <p class="content-p">大約到了第三週，有天早上醒來，他看了一下手機，發現是早上六點半。昨晚大概十一點睡的，中間有沒有起來？</p>
-    <p class="content-p">他想了很久，確認只有一次。凌晨三點左右，他起來排尿，這次尿流比以前順一點，不用站在那裡等半天，收尾也沒有滴滴答答拖很久，殘尿的悶脹感明顯少了很多。回去躺下，他居然很快又睡著了，一直到早上六點半。</p>
-    <p class="content-p">再過了一個月，半夜起來的次數慢慢從三四次降到了一次，偶爾兩次。每次排尿的感覺也比以前順暢，不再是那種憋了半天、最後只擠出幾滴的窘境，滴不完的感覺也明顯變少了。</p>
-    <p class="content-p">更讓他驚喜的，是整個人的狀態。因為睡眠品質慢慢改善，他白天的精神明顯好多了，以前打太極打到一半就想坐著休息，現在能完整打完一套，還有餘力跟老朋友站在公園聊上半個小時。</p>
+        <h2>第三週的那個早晨，他看著手機上的「06:30」，愣了整整一分鐘</h2>
+        <p class="content-p">前兩週，林先生老實說沒有感覺到什麼明顯差異，他提醒自己要有耐心：「這不是藥，是保養，調養身體需要時間。」</p>
+        <p class="content-p">大約到了第三週，有天早上醒來，他看了一下手機，發現是早上六點半時。昨晚大概十一點睡的，中間有沒有起來？</p>
+        <p class="content-p">他想了很久，確認只有一次。凌晨三點左右，他起來排尿，這次尿流比以前順一點，不用站在那裡等半天，收尾也沒有滴滴答答拖很久，殘尿的悶脹感明顯少了很多。回去躺下，他居然很快又睡著了，一直到早上六點半。</p>
+        <p class="content-p">再過了一個月，半夜起來的次數慢慢從三四次降到了一次，偶爾兩次。每次排尿的感覺也比以前順暢，不再是那種憋了半天、最後只擠出幾滴的窘境，滴不完的感覺也明顯變少了。</p>
+        <p class="content-p">更讓他驚喜的，是整個人的狀態。因為睡眠品質慢慢改善，他白天的精神明顯好多了，以前打太極打到一半就想坐著休息，現在能完整打完一套，還有餘力跟老朋友站在公園聊上半個小時。</p>
 
-    <div class="placeholder-box font-bold text-black">圖：CTA(加line諮詢)</div>
+        <div class="img-placeholder font-bold text-black border-2 border-blue-200">圖：CTA(加line諮詢)</div>
 
-    <h2 class="content-h2">太魯閣峽谷裡，他走了四個小時，沒有一次因為滴滴答答、尿不乾淨而慌亂</h2>
-    <p class="content-p">退休後的第三年春天，兒子又提起花蓮的計畫。這次，林先生沒有猶豫太久，他覺得現在的狀況跟以前不一樣了。</p>
-    <p class="content-p">他說：「去啊，我去。」老婆轉頭看他，有點訝異，然後笑了。</p>
-    <p class="content-p">那趟旅行，他們在太魯閣走了將近四個小時。他沒有一直在盤算下一個廁所在哪裡，只是走著，看著，偶爾拉著孫子的小手，告訴他那塊大石頭是怎麼來的。</p>
-    <p class="content-p">晚上住在花蓮市區的民宿，他半夜只起來了一次，排尿順暢，沒有拖拖拉拉，回去躺下，五分鐘內又睡著了。</p>
-    <p class="content-p">早上七點，他比所有人都早醒，去外面買了早餐，坐在民宿的小庭院裡，泡了杯茶。</p>
+        <h2>太魯閣峽谷裡，他走了四個小時，沒有一次因為滴滴答答、尿不乾淨而慌亂</h2>
+        <p class="content-p">退休後的第三年春天，兒子又提起花蓮的計畫。這次，林先生沒有猶豫太久，他覺得現在的狀況跟以前不一樣了。</p>
+        <p class="content-p">他說：「去啊，我去。」老婆轉頭看他，有點訝異，然後笑了。</p>
+        <p class="content-p">那趟旅行，他們在太魯閣走了將近四個小時。他沒有一直在盤算下一個廁所在哪裡，只是走著，看著，偶爾拉著孫子的小手，告訴他那塊大石頭是怎麼來的。</p>
+        <p class="content-p">晚上住在花蓮市區的民宿，他半夜只起來了一次，排尿順暢，沒有拖拖拉拉，回去躺下，五分鐘內又睡著了。</p>
+        <p class="content-p">早上七點，他比所有人都早醒，去外面買了早餐，坐在民宿的小庭院裡，泡了杯茶。</p>
 
-    <div class="placeholder-box">圖：62歲男子坐在庭院喝茶的樣子</div>
+        <div class="img-placeholder">圖：62歲男子坐在庭院喝茶的樣子</div>
 
-    <h2 class="content-h2">台灣有多少男人正在過這種生活？數字比你想像的還驚人</h2>
-    <p class="content-p">林先生的經歷，其實在台灣許多中老年男性身上並不是個案。根據醫學統計，男性在40歲之後攝護腺便開始出現自然的生理變化；到了50歲，約有一半的男性會出現排尿困擾；到了70歲之後，這個比例更高達七成以上。</p>
-    <p class="content-p">如果你或身邊的親友有以下狀況，可能就要多加留意：</p>
-    <p class="content-p">夜晚睡覺中途需要起床排尿 <strong>超過兩次</strong> 以上</p>
-    <p class="content-p">每次排尿感覺 <strong>尿流變細、無力</strong> ，需要用力憋氣才能排出，或擠出一點又沒了</p>
-    <p class="content-p">排尿結束後 <strong>滴滴答答收不了尾</strong> ，或覺得沒有尿乾淨</p>
-    <p class="content-p">這些都不是理所當然的老化，也不是只能忍受的宿命。</p>
+        <h2>台灣有多少男人正在過這種生活？數字比你想像的還驚人</h2>
+        <p class="content-p">林先生的經歷，其實在台灣許多中老年男性身上並不是個案。根據醫學統計，男性在40歲之後攝護腺便開始出現自然的生理變化；到了50歲，約有一半的男性會出現排尿困擾；到了70歲之後，這個比例更高達七成以上。</p>
+        <p class="content-p">如果你或身邊的親友有以下狀況，可能就要多加留意：</p>
+        <p class="content-p">夜晚睡覺中途需要起床排尿 <strong>超過兩次</strong> 以上 [cite: 65]</p>
+        <p class="content-p">每次排尿感覺 <strong>尿流變細、無力</strong> ，需要用力憋氣才能排出，或擠出一點又沒了 [cite: 66]</p>
+        <p class="content-p">排尿結束後 <strong>滴滴答答收不了尾</strong> ，或覺得沒有尿乾淨 [cite: 67]</p>
+        <p class="content-p">這些都不是理所當然的老化，也不是只能忍受的宿命。</p>
 
-    <h2 class="content-h2">那個每天早起泡茶的男人，已經不記得上一次睡不著是什麼感覺</h2>
-    <p class="content-p">林先生現在還是每天早起。不是因為睡不著，而是習慣了。他喜歡在太陽剛爬上屋頂那個時刻，泡一壺茶，坐在窗邊，安安靜靜地迎接新的一天。</p>
-    <p class="content-p">他說，以前那段日子，最讓他難受的不是身體的不舒服，而是那種無力感，覺得自己的身體不受自己控制，生活的半徑一天天縮小，不得已只能放棄很多事情。</p>
-    <p class="content-p">「現在比較好了。我不是說跟年輕時完全一樣，但我知道怎麼照顧自己了，也知道有哪些方法可以幫助自己。」他說。</p>
-    <p class="content-p">「身體缺的東西就是需要慢慢補回來。你不能期待吃一個禮拜就怎樣，但你有耐心，持續下去，慢慢就會感覺到。」</p>
-    <p class="content-p">在日常保養這一塊，找對適合自己的方式，持續而規規律律地照顧身體，是他覺得最重要的事。</p>
+        <h2>那個每天早起泡茶的男人，已經不記得上一次睡不著是什麼感覺</h2>
+        <p class="content-p">林先生現在還是每天早起。不是因為睡不著，而是習慣了。他喜歡在太陽剛爬上屋頂那個時刻，泡一壺茶，坐在窗邊，安安靜靜地迎接新的一天。</p>
+        <p class="content-p">他說，以前那段日子，最讓他難受的不是身體的不舒服，而是那種無力感，覺得自己的身體不受自己控制，生活的半徑一天天縮小，不得已只能放棄很多事情。</p>
+        <p class="content-p">「現在比較好了。我不是說跟年輕時完全一樣，但我知道怎麼照顧自己了，也知道有哪些方法可以幫助自己。」他說。</p>
+        <p class="content-p">「身體缺的東西就是需要慢慢補回來。你不能期待吃一個禮拜就怎樣，但你有耐心，持續下去，慢慢就會感覺到。」</p>
+        <p class="content-p">在日常保養這一塊，找對適合自己的方式，持續而規律地照顧身體，是他覺得最重要的事。</p>
 
-    <div class="cta-area">
-        <p class="font-bold mb-4">圖：置底圖：CTA(撥話諮詢)</p>
-        <a href="https://line.me" class="btn btn-line">立即加 LINE 諮詢</a>
-        <a href="tel:0800000000" class="btn btn-tel">撥打免付費專線：0800-000-000</a>
-    </div>
+        <section class="cta-container">
+            <p class="text-center font-bold mb-6 text-slate-400">圖：置底圖：CTA(撥話諮詢)</p>
+            <a href="https://line.me" class="btn-action btn-line">立即加 LINE 諮詢專業顧問</a>
+            <a href="tel:0800000000" class="btn-action btn-phone">撥打免付費專線：0800-000-000</a>
+        </section>
+    </main>
 
-    <footer class="text-center py-10 text-gray-400 text-xs border-t mt-10">
-        © 2026 Lohas Magazine 健康特輯
-    </footer>
 </div>
 
 </body>
