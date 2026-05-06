@@ -12,7 +12,7 @@ body {
     line-height: 1.9;
     background: #fff;
     color: #222;
-    padding-bottom: 70px;
+    padding-bottom: 120px;
 }
 
 .container {
@@ -73,25 +73,35 @@ p:first-of-type {
 }
 /* 浮動CTA */
 
-.sticky-cta {
+.sticky {
     position: fixed;
-    bottom: 0;
     left: 0;
-    width: 100%;
-    background: #d62828;
-    text-align: center;
-    padding: 14px 10px;
-    padding-bottom: calc(14px + env(safe-area-inset-bottom));
+    right: 0;
+    bottom: 0;
     z-index: 9999;
+    background: #fff;
+    padding: 8px 12px;
+    padding-bottom: calc(8px + env(safe-area-inset-bottom));
+    box-shadow: 0 -3px 12px rgba(0,0,0,0.18);
+    box-sizing: border-box;
 }
-    
-.sticky-cta a {
-    color: #fff;
-    font-size: 20px;
-    padding: 4px 0;
-    font-weight: bold;
-    text-decoration: none;
+
+.sticky-inner {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.sticky-inner a {
     display: block;
+    width: 100%;
+}
+
+.sticky-gif-full {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
 }
 
 .category-tag {
