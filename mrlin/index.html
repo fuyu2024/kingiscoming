@@ -209,6 +209,23 @@ p:first-of-type {
     line-height: 1.9;
 }
 
+/* YouTube 響應式影片 */
+.video-box {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin: 24px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background: #000;
+}
+
+.video-box iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+    
 </style>
 </head>
 
@@ -232,10 +249,11 @@ p:first-of-type {
 
 <p>「我已經不記得，上一次睡超過三個小時，是什麼感覺了。」</p>
 
-<div class="img-box">
- <iframe
+<div class="video-box">
+  <iframe
     src="https://www.youtube.com/embed/zQglOqhJyZk?si=OGp35T1s2ha2Mx2l"
     title="YouTube video player"
+    loading="lazy"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
     referrerpolicy="strict-origin-when-cross-origin"
     allowfullscreen>
